@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Z-BREACH // LOADING</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto+Mono:400,700&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== BACKGROUND SLIDES ===== -->
+<div id="slides">
+  <div class="slide" id="slideA"></div>
+  <div class="slide" id="slideB"></div>
+</div>
+
+<!-- ===== POST FX ===== -->
+<div class="fx tint"></div>
+<div class="fx siren"></div>
+<div class="fx vignette"></div>
+<div class="fx scan"></div>
+<div class="fx grain" id="grain"></div>
+<div class="fx scanbar"></div>
+<div class="fx flash" id="flash"></div>
+
+<!-- ===== HUD FRAME ===== -->
+<div class="corner tl"></div><div class="corner tr"></div>
+<div class="corner bl"></div><div class="corner br"></div>
+
+<!-- ===== TOP LEFT: LOGO ===== -->
+<div id="logo">
+  <div class="tag"><span class="dot"></span>ОБЪЕКТ-19 // ПРОТОКОЛ «КРАСНЫЙ»</div>
+  <h1 class="glitch" data-text="Z-BREACH">Z-BREACH</h1>
+  <div class="sub" id="servername">НАРУШЕНИЕ УСЛОВИЙ СОДЕРЖАНИЯ</div>
+</div>
+
+<!-- ===== TOP RIGHT: INFO ===== -->
+<div id="info">
+  <div class="alert"><span class="blink">■</span> CONTAINMENT BREACH</div>
+  <table>
+    <tr><td>ВРЕМЯ</td><td id="clock">00:00:00</td></tr>
+    <tr><td>КАРТА</td><td id="map">—</td></tr>
+    <tr><td>РЕЖИМ</td><td id="gamemode">—</td></tr>
+    <tr><td>СЛОТЫ</td><td id="maxplayers">—</td></tr>
+  </table>
+</div>
+
+<!-- ===== CENTER-RIGHT: SLIDE CAPTION ===== -->
+<div id="caption">
+  <div class="cap-idx" id="capIdx">01 / 07</div>
+  <div class="cap-title" id="capTitle">—</div>
+  <div class="cap-text" id="capText">—</div>
+</div>
+
+<!-- ===== BOTTOM: TERMINAL + PROGRESS ===== -->
+<div id="bottom">
+  <div id="terminal"></div>
+
+  <div id="tip"><b>СОВЕТ //</b> <span id="tipText"></span></div>
+
+  <div id="progressWrap">
+    <div class="pct"><span id="pct">000</span><small>%</small></div>
+    <div class="pmeta">
+      <div class="status" id="status">ИНИЦИАЛИЗАЦИЯ...</div>
+      <div class="bar"><div class="fill" id="fill"></div><div class="segs"></div></div>
+      <div class="file" id="file">&nbsp;</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
